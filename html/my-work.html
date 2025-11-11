@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potfolio</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/my-work.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="background"></div>
+    <header>
+        <nav id="main-nav-bar">
+            <a class="nav-btn" id="home-btn" href="../index.html">HOME</a>
+            <a class="nav-btn" id="my-work-btn" href="./my-work.html">MY WORK</a>
+            <a class="nav-btn" id="about-btn" href="./about.html">ABOUT</a>
+        </nav>
+    </header>
+    <main>
+        <div></div>
+        <section id="main-work-sec">
+            <div id="work-text">
+                <h1>MY WORKS</h1>
+                <p>Here you can look all my works.</p>
+            </div>
+            <nav id="mode-bar">
+                <button class="set-btn" id="set-modelling-btn">3D Modelling</button>
+                <button class="set-btn" id="set-editing-btn">Video Editing</button>
+                <button class="set-btn" id="set-pixelart-btn">Pixel Art</button>
+            </nav>
+        </section>
+        <section id="works-section">
+            <span class="topic">HARD SURFACE</span>
+            <div class="line" id="line-1">
+                <div class="work-block" id="block-1">
+                    <a class="link-to-work" href="./works/modelling/work-1.html"></a>
+                    <div class="work-preview" id="preview-1"></div>
+                    <div class="vignette-preview"></div>
+                    <h3 class="work-name">SCI-FI Tank</h3>
+                    <p class="work-description">High Poly (Bevel + Subdiv)</p>
+                </div>
+                <div class="work-block" id="block-1">
+                    <a class="link-to-work" href="./works/modelling/work-2.html"></a>
+                    <div class="work-preview" id="preview-2"></div>
+                    <div class="vignette-preview"></div>
+                    <h3 class="work-name">Treshhold "The 6th test"</h3>
+                    <p class="work-description">High Poly (Bevel + Subdiv), Low Poly</p>
+                </div>
+                <div class="work-block" id="block-1">
+                    <a class="link-to-work" href="./works/modelling/work-3.html"></a>
+                    <div class="work-preview" id="preview-3"></div>
+                    <div class="vignette-preview"></div>
+                    <h3 class="work-name">Container</h3>
+                    <p class="work-description">High Poly (Bevel + Subdiv), Low Poly, UV</p>
+                </div>
+            </div>
+            <span class="topic">STYLIZED LOW POLY</span>
+            <div class="line">
+                <div class="work-block" id="block-1">
+                    <a class="link-to-work" href="./works/modelling/work-4.html"></a>
+                    <div class="work-preview" id="preview-4"></div>
+                    <div class="vignette-preview"></div>
+                    <h3 class="work-name">Sweet world</h3>
+                    <p class="work-description">Low Poly, UV, Baking ,Textered</p>
+                </div>
+                <div class="work-block" id="block-1">
+                    <a class="link-to-work" href="./works/modelling/work-5.html"></a>
+                    <div class="work-preview" id="preview-5"></div>
+                    <div class="vignette-preview"></div>
+                    <h3 class="work-name">PSX Props</h3>
+                    <p class="work-description">Low Poly, UV, Baking, Textured</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>This web-page was created by me.</p>
+        <a href="#">GitHub</a>
+    </footer>
+</body>
+<script type="module" src="../js/my-work/work-switch.js"></script>
+</html>

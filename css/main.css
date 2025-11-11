@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Sora", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+#background {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("../img/backbround/liquid.gif");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.15) blur(20px);
+    
+    position: absolute;
+    z-index: -1;
+}
+
+main {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main div {
+    width: 100%;
+    height: 100px;
+
+    background-color: transparent;
+}
+
+#main-info-sec {
+    width: 100%;
+    height: calc(100vh - 100px);
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#logo-circle-1 {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+#name-info {
+    color: #fff;
+    font-size: 70px;
+}
+
+#pro-info {
+    margin-top: 10px;
+
+    color: #fff;
+    font-size: 20px;
+}
