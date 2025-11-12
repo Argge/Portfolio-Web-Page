@@ -52,13 +52,31 @@ main div {
     gap: 20px;
 }
 
-#logo-circle-1 {
+.logo-circle {
     width: 200px;
     height: 200px;
     margin-top: 50px;
 
     border-radius: 50%;
     border: 2px solid rgba(255, 255, 255, 0.1);
+    object-fit: cover;
+
+    transition: 1s;
+}
+
+#logo-1:hover {
+    transform: rotateY(180deg);
+}
+
+#logo-2 {
+    position: absolute;
+    z-index: -1;
+}
+
+#logo-2:hover {
+    opacity: 1;
+    transform: rotateY(0deg);
+    z-index: 1;
 }
 
 #name-info {

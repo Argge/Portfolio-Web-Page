@@ -3,8 +3,8 @@ const slideLeft = document.getElementById("slide-left");
 const slideRight = document.getElementById("slide-right");
 
 let currentIndex = 0;
-let offset = 600;
-let step = 600;
+let offset = 650;
+let step = 650;
 
 let check = false;
 images.forEach((image, i) => {
@@ -43,8 +43,8 @@ function updateSlider() {
         image.style.margin = "0 40px 0 40px";
     });
 
-    if (offset < -600) {
-        offset = 600;
+    if (offset < -650) {
+        offset = 650;
         setTimeout(() => {
             images.forEach((image, i) => {
                 image.style.transition = "none";
@@ -53,8 +53,8 @@ function updateSlider() {
             });
         }, 10);
     }
-    else if (offset > 600) {
-        offset = -600;
+    else if (offset > 650) {
+        offset = -650;
         setTimeout(() => {
             images.forEach((image, i) => {
                 image.style.transition = "none";
@@ -64,3 +64,5 @@ function updateSlider() {
         }, 10);
     }
 }
+
+addEventListener("")
