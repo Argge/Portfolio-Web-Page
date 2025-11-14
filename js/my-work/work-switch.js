@@ -100,7 +100,7 @@ modellingBtn.addEventListener("click", () => {
         const work3 = new WorkBlock(
             line1, 
             "./works/modelling/work-3.html", 
-            "../img/work-preview/3d/container.png", 
+            "../img/work-preview/3d/work_3/container_render_2.png", 
             "Container", 
             "High Poly (Bevel + Subdiv), Low Poly, UV"
         );
