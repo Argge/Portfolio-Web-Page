@@ -91,7 +91,7 @@ modellingBtn.addEventListener("click", () => {
         const work2 = new WorkBlock(
             line1, 
             "./works/modelling/work-2.html", 
-            "../img/work-preview/3d/treshhold.png", 
+            "../img/work-preview/3d/work_2/render_1_compose.png", 
             `Treshhold "The 6th test"`, 
             "High Poly (Bevel + Subdiv), Low Poly"
         );
@@ -126,7 +126,7 @@ modellingBtn.addEventListener("click", () => {
             line2, 
             "./works/modelling/work-5.html", 
             "../img/work-preview/3d/psx.png", 
-            `PSX Props"`, 
+            "PSX Props", 
             "Low Poly, UV, Baking, Textured"
         );
         work5.Create();
@@ -158,18 +158,18 @@ editingBtn.addEventListener("click", () => {
         const work2 = new WorkBlock(
             line1, 
             "#", 
-            "#", 
+            "../img/work-preview/soon.png", 
             "Corvette C5 | Edit", 
-            "test"
+            "soon"
         );
         work2.Create();
 
         const work3 = new WorkBlock(
             line1, 
             "#", 
-            "#", 
+            "../img/work-preview/soon.png", 
             "Infiniti g37s drift | Edit", 
-            "test"
+            "soon"
         );
         work3.Create();
 
@@ -188,13 +188,13 @@ pixelartBtn.addEventListener("click", () => {
         worksSec.appendChild(line1);
 
 
-        const work1 = new WorkBlock(line1, "#", "#", "test", "test");
+        const work1 = new WorkBlock(line1, "#", "../img/work-preview/soon.png", "soon", "soon");
         work1.Create();
 
-        const work2 = new WorkBlock(line1, "#", "#", "test", "test");
+        const work2 = new WorkBlock(line1, "#", "../img/work-preview/soon.png", "soon", "soon");
         work2.Create();
 
-        const work3 = new WorkBlock(line1, "#", "#", "test", "test");
+        const work3 = new WorkBlock(line1, "#", "../img/work-preview/soon.png", "soon", "soon");
         work3.Create();
 
         setTimeout(() => switchUp(), 100);

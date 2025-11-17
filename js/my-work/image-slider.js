@@ -1,4 +1,5 @@
-const slider = document.getElementById("slider")
+const slider = document.getElementById("slider");
+const scaleWin = document.getElementById("scale-window");
 const imageLeft = document.getElementById("image-work-left");
 const imageMidle = document.getElementById("image-work-midle");
 const imageRight = document.getElementById("image-work-right");
@@ -14,13 +15,20 @@ const worksGallary = {
         work1: {
             1: "../../../img/work-preview/3d/work_1/render_4_compose.png",
             2: "../../../img/work-preview/3d/work_1/render_2_compose.png",
-            3: "../../../img/work-preview/3d/work_1/render_3_compose.png"
+            3: "../../../img/work-preview/3d/work_1/render_3_compose.png",
+            4: "../../../img/work-preview/3d/work_1/render_5_compose.png",
+            5: "../../../img/work-preview/3d/work_1/render_6_compose.png"
             },
+        work2: {
+            1: "../../../img/work-preview/3d/work_2/render_1_compose.png",
+            2: "../../../img/work-preview/3d/work_2/render_4_compose.png",
+            3: "../../../img/work-preview/3d/work_2/render_2_compose.png"
+        },
         work3: {
             1: "../../../img/work-preview/3d/work_3/container_render_2.png",
             2: "../../../img/work-preview/3d/work_3/container_render_3.png",
             3: "../../../img/work-preview/3d/work_3/container_render_4.png",
-            4: "../../../img/work-preview/3d/work_3/container_render_5.png",
+            4: "../../../img/work-preview/3d/work_3/container_render_5.png"
         }
     }
 };
@@ -28,6 +36,30 @@ const worksGallary = {
 const classes = Array.from(slider.classList);
 const categoryName = classes.find(className => worksGallary[className]);
 const workName = classes.find(className => worksGallary[categoryName]?.[className]);
+
+let isScaled = false;
+imageMidle.addEventListener("click", () => {
+    if (!isScaled) {
+        isScaled = true;
+        const work = worksGallary[categoryName][workName];
+
+        let img = document.createElement("img");
+        img.id = "scaled-image";
+        img.src = work[midleIndex];
+        scaleWin.appendChild(img);
+
+        scaleWin.style.pointerEvents = "all";
+    }
+});
+
+scaleWin.addEventListener("click", () => {
+    const img = document.getElementById("scaled-image");
+    if (isScaled) {
+        scaleWin.removeChild(img);
+        isScaled = false;
+        scaleWin.style.pointerEvents = "none";
+    }
+});
 
 slideRight.addEventListener("click", () => {
     slideAnimation();
